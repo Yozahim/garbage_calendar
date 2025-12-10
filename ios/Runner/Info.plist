@@ -51,12 +51,7 @@
 	<string>Potrzebujemy dostępu do galerii, aby wybrać zdjęcie z datami wywozu śmieci</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>Potrzebujemy dostępu do kalendarza, aby dodać daty wywozu śmieci</string>
-    <key>NSCameraUsageDescription</key>
-<string>Potrzebujemy dostępu do aparatu, aby zrobić zdjęcie z datami wywozu śmieci</string>
-<key>NSPhotoLibraryUsageDescription</key>
-<string>Potrzebujemy dostępu do galerii, aby wybrać zdjęcie z datami wywozu śmieci</string>
-<key>NSCalendarsUsageDescription</key>
-<string>Potrzebujemy dostępu do kalendarza, aby dodać daty wywozu śmieci</string>
+    
 </dict>
 </plist>
 
