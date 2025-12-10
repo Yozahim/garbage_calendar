@@ -22,17 +22,21 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
       
+      - name: Clean iOS generated files
+        run: |
+          rm -rf ios/Flutter/Generated.xcconfig
+          rm -rf ios/Flutter/flutter_export_environment.sh
+          rm -rf ios/.symlinks
+          rm -rf ios/Flutter/Flutter.framework
+          rm -rf ios/Flutter/Flutter.podspec
+      
       - name: Create iOS platform files
         run: flutter create --platforms=ios .
       
-      - name: Setup CocoaPods
-        run: |
-          sudo gem install cocoapods
-          pod --version
-      
       - name: Install CocoaPods dependencies
         working-directory: ios
-        run: pod install
+        run: |
+          pod install --repo-update
       
       - name: Build iOS (no codesign)
         run: flutter build ios --release --no-codesign
