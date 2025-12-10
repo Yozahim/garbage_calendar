@@ -1,0 +1,25 @@
+name: kalendarz_smieci
+description: Aplikacja do dodawania dat wywozu śmieci do kalendarza na podstawie zdjęcia
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  google_mlkit_text_recognition: ^0.11.0
+  image_picker: ^1.0.7
+  add_2_calendar: ^2.1.0
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
